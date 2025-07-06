@@ -33,7 +33,8 @@ module Types(
 
             ) where
 
-import List( partition )
+import Prelude hiding ((<>))
+import Data.List( partition )
 import PPrint
 import Data.IORef( IORef, readIORef )
 import System.IO.Unsafe( unsafePerformIO )
